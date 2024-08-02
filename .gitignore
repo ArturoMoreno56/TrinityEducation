@@ -1,6 +1,6 @@
 #ignorar los  archivos
-prueba/
-.vs/
+/prueba copy
+/.vscode
 
 #Subir pero no que este
 
