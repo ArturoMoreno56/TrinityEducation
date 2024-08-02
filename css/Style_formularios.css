@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f7f7; /* Color de fondo */
+    padding: 20px;
+}
+
+
+/* Estilos para la barra de navegación */
+header {
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(17, 34, 158); /* Color azulado */
+    color: white;
+    padding: 10px 0; /* Reducido padding para ser consistente con el de referencia */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00332a; /* Cambio de color al pasar el ratón */
+}
+
+h1 {
+    margin-top: 50px; /* Reducido el margen superior */
+    color: #004d40; /* Color del título */
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    color: #333;
+    display: block;
+    margin-bottom: 8px; /* Espacio reducido entre etiquetas */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="radio"] {
+    width: calc(100% - 16px); /* Ancho ajustado para compensar padding y border */
+    padding: 10px;
+    margin-bottom: 12px; /* Espacio reducido entre campos */
+    border: 1px solid #ccc; /* Borde visible */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d40; /* Color de fondo */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px; /* Espacio arriba del botón */
+}
+
+button:hover {
+    background-color: #00332a; /* Cambio de color al pasar el ratón */
+}
+
+#preguntas {
+    margin-bottom: 16px; /* Espacio reducido entre preguntas */
+}
+
+/* Estilos específicos para los radio buttons y sus etiquetas */
+.radio-label {
+    margin-right: 10px;
+}
+
+.radio-input {
+    margin-right: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    form {
+        padding: 16px; /* Reducir padding en pantallas pequeñas */
+    }
+}
+
+
+/* Estilos para el select de Etapa */
+.campo-select {
+    width: 100%; /* Ancho del select */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: white; /* Color de fondo */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px auto; /* Margen */
+    display: block; /* Bloque de elemento */
+}
+
+.campo-select:focus {
+    outline: none; /* Eliminar el contorno al enfocar */
+    border-color: #004d40; /* Cambiar color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 77, 64, 0.5); /* Sombra al enfocar */
+}

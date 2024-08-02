@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+}
+
+header {
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(17, 34, 158); /* Color azulado */
+    color: white;
+    padding: 10px 0; /* Reducido padding para ser consistente con el de referencia */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-links {
+    display: inline-block; /* Hace que la lista se comporte como un bloque pero permitiendo centrarlo */
+    padding-left: 0; /* Elimina el relleno predeterminado */
+}
+
+.logo {
+    height: 20px;
+    background-image: url('logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+table {
+    width: 50%;
+    margin: 50px auto;
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px; /* Aumenta el relleno para un aspecto más espacioso */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+th {
+    background-color: #1a61ad; /* Un azul más vibrante para los encabezados */
+    color: #ffffff;
+}
+
+td {
+    background-color: #f8f9fa; /* Un fondo más claro para las celdas */
+    color: #212529; /* Un color de texto más oscuro para mejor contraste */
+}
+
+tr:nth-child(even) {
+    background-color: #e9ecef; /* Alterna colores de fondo para las filas */
+}
+
+h:first-child, td:first-child {
+    background-image: linear-gradient(to right, #ffffff, #e9ecef, #ffffff);
+    position: relative;
+}
+
+th:first-child::after, td:first-child::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px; /* Ancho de la línea divisoria */
+    background-color: #e9ecef; /* Color de la línea divisoria */
+}

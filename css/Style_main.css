@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #008080; /* Teal background */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #004d40; /* Dark teal background */
+    border-radius: 4px;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+thead {
+    background-color: #008080; /* Teal background */
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey background for even rows */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Slightly darker grey for hover effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header, nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+}

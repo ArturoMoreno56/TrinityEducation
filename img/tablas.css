@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6f7f7; /* Light teal background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically */
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #11999e; /* Teal background */
+    color: white;
+    padding: 15px 0; /* Adjusted padding */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+nav {
+    justify-content: space-around; /* Distribute links evenly */
+}
+
+nav a {
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #11999e; /* Teal color on hover */
+    background-color: #f1f1f1; /* Light grey background on hover */
+}
+
+/* Table Styles */
+.tabla-container {
+    margin-top: 80px; /* Adjusted top margin to avoid overlap with navbar */
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+thead {
+    background-color: #11999e; /* Teal background */
+}
+
+th, td {
+    padding: 15px; /* Adjusted padding */
+    border-bottom: 1px solid #ddd; /* Subtle borders for grid lines */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey background for even rows */
+}
+
+tbody tr:hover {
+    background-color: #e6f7f7; /* Teal background for hover effect */
+}
+
+/* Button Styles */
+button {
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header, nav {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; /* Increased padding for smaller screens */
+    }
+
+    .tabla-container {
+        margin-top: 120px; /* Increased top margin for smaller screens */
+    }
+}

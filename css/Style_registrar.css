@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+body{
+    background-color: rgb(253, 253, 253);
+    font-family: 'Nunito', sans-serif;
+}
+
+.formulario {   
+    background-color: rgb(156, 149, 149);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los elementos estén en columna */
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 100%;
+    margin: auto; /* Centra horizontalmente */
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+legend{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.entrada_Datos{
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 2rem;
+}
+.boton_crear_usuario:hover{
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+.boton_crear_usuario{
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 1rem;
+    padding: 0.7rem;
+
+}

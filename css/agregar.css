@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7f7; /* Light teal background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically */
+    padding: 0; /* Remove extra padding */
+}
+
+/* Header and Navigation Styles */
+header {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #11999e; /* Teal background */
+    color: white;
+    padding: 10px 0; /* Reduced padding for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Distribute links evenly */
+    width: 30%;
+    margin: 0 auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #28a745; /* Green color on hover, similar to reference */
+    background-color: transparent; /* Remove background on hover */
+    border-radius: 0; /* Remove rounded border */
+}
+
+/* Form Styles */
+form {
+    width: 90%; /* Adjust form width to content */
+    max-width: 600px; /* Set a maximum width */
+    margin: 60px auto 0 auto; /* Add top margin to avoid overlap with navbar */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #11999e; /* Teal background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+form button:hover {
+    background-color: #28a745; /* Green background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header, nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+}

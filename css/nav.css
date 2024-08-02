@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: #8fd5e7; 
+}
+
+/* Header and Navigation Styles */
+header {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(17, 34, 158); /* Color azulado */
+    color: white;
+    padding: 10px 0; /* Reducido padding para ser consistente con el de referencia */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4128a7; /* Color verde al pasar el ratón, similar al de referencia */
+   
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 60px auto 0; /* Añade margen superior para evitar superposición con la barra de navegación */
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+thead {
+    background-color: #0a1746; /* Color azulado */
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro para filas pares */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Fondo gris ligeramente más oscuro al pasar el ratón */
+}
