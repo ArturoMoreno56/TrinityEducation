@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Login</title>
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+		const error = urlParams.get("error");
+		if (error === "clave_erronea") {
+		  alert("Clave erronea");
+		} else if (error === "usuario_inexistente") {
+		  alert("No existe el usuario");
+		}
+	  </script>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src=>
+	<div class="container">
+		<div class="img">
+			<img class="logo" src="img/logo_transparente.png" alt="">
+		</div>
+		<div class="login-content">
+			<form action="back/login.php" method="post">
+				<img src="img/avatar.png">
+				<h2 class="title">Ingreso a la Plataforma Trinity Education</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Correo</h5>
+           		   		<input type="email" class="input"  id="nombre" name="nombre" required>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Clave</h5>
+           		    	<input type="password" class="input" id="clave" name="clave" required>
+            	   </div>
+            	</div>
+            
+            	<input type="submit" class="boton_iniciar_sesion" value="Iniciar sesión"/>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
