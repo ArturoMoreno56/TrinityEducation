@@ -1,5 +1,7 @@
-#ignorar los sos archivos
+#ignorar los  archivos
+prueba/
+.vs/
 
-*/prueba
+#Subir pero no que este
+
 archivos/*
-*/.vs
